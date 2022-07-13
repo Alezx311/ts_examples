@@ -1,7 +1,9 @@
 # compiled output
+/build
 /dist
 /node_modules
-/build
+/__logs__
+/coverage
 
 # Development files
 *.dev
