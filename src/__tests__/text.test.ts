@@ -1,5 +1,4 @@
 import { Constants } from "../constants";
-import { Random } from "../random";
 import { getClassStats } from "../shortcuts";
 import { Text } from "../text";
 
@@ -11,6 +10,7 @@ const jsonObj = JSON.stringify(obj, null, "\t");
 const jsonStats = JSON.stringify(stats, null, "\t");
 
 describe("Module Stats and auto checks", () => {
+  
   it(`${desc} -> Is Defined`, () => {
     expect(obj).toBeDefined();
   });

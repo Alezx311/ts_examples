@@ -11,6 +11,17 @@ export class Constants {
   static ARRAY = [42, 311];
   static OBJECT: O = { name: "ObjectExampleConstant", value: 42 };
   static FUNCTION = () => {};
+  static VALUES_PRIMITIVE = {
+    NULL: null,
+    UNDEFINED: undefined,
+    NAN: Number.NaN,
+    STRING: this.STRING,
+    BOOLEAN: this.BOOLEAN,
+    NUMBER: this.NUMBER,
+    ARRAY: this.ARRAY,
+    OBJECT: this.OBJECT,
+    FUNCTION: this.FUNCTION,
+  };
 
   static FILENAME = __filename;
   static DIRNAME = __dirname;

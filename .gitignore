@@ -4,6 +4,7 @@
 /node_modules
 /__logs__
 /coverage
+/testlogs.json
 
 # Development files
 *.dev

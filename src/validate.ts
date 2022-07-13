@@ -10,7 +10,7 @@ export class Validate {
   static isNull = (v: U): v is null => typeof v === "object" && v === null;
   static isUndefined = (v: U): v is undefined => typeof v === "undefined";
   static isTruthy = (v: U): v is NonNullable<any> => !!v;
-  static isEqual = (v: U, v2: U): v is typeof v2 =>
+  static isEqual = (v: U, v2: U = null): v is typeof v2 =>
     typeof v === typeof v2 && v === v2;
   static isExists = (v: U) => typeof v !== "undefined";
   static isEmpty = (v: U) => this.isString(v) && !v.length;
